@@ -15,7 +15,7 @@
     <div>
     <nav>
         <ul>
-            <li><a href=""><i class="fas fa-sign-in-alt"></i>Login</a></li>
+            <li><a href="../../src/pages/login.php"><i class="fas fa-sign-in-alt"></i>Login</a></li>
             <li><a href="../../src/pages/register.php"><i class="fas fa-user-plus"></i>S'enregistrer</a></li>
         </ul>
     </nav>
