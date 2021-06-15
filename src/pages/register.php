@@ -1,6 +1,7 @@
 <?php
     $titre = "Enregistrez-vous";
     require "../../src/common/template.php";
+    require "../../src/fonctions/dbAccess.php";
     require "../../src/fonctions/mesFonctions.php";
     require "../../src/fonctions/dbFonction.php";
 
@@ -8,10 +9,10 @@
     estConnecte();
 
     // Définir la variable qui marquera si le mot de passe est correct ou pas
-    if(isset($_SESSION["mdpNok"]) && $_SESSION["mdrpNok"] == true){
+    if(isset($_SESSION["mdpNok"]) && $_SESSION["mdpNok"] == true) {
         $mdpNok = $_SESSION["mdpNok"];
         $_SESSION["mdpNok"] = false;
-    } else{
+    } else {
         $mdpNok = false;
     }
 ?>

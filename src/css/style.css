@@ -7,12 +7,12 @@
 }
 
 .bgWhite{
-    background-color: #e6e6e6;
+    background-color: #F5F2F2;
 }
 
 /* header */
 header{
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,6 +182,7 @@ footer p{
     padding: 12rem;
 }
 
+
 /* Animation couleur bouton */
 
 @keyframes change {
@@ -220,6 +221,7 @@ footer p{
 }
 
 /* ADMIN */
+
 .gestionAdmin .template{
     width: 80%;
     display: flex;
@@ -234,6 +236,7 @@ footer p{
     display: flex;
     flex-direction: column;
 }
+
 .gestionAdmin .template .menu a{
     text-decoration: none;
     padding: 1rem;
@@ -244,7 +247,6 @@ footer p{
     margin-bottom: 1rem;
     box-shadow: 5px 5px 6px 2px rgba(0,0,0,0.8);
 }
-
 .gestionAdmin .template .menu a:hover{
     animation: change 3s infinite;
     color: white; 
@@ -252,10 +254,12 @@ footer p{
 }
 
 /* ADMIN GESTION CATEGORIE */
+
 .adminContenu{
     width: 100%;
     text-align: center;
 }
+
 .gestionAdmin .adminContenu table{
     border: 1px solid black;
     width: 100%;
