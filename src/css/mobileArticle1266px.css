@@ -1,0 +1,9 @@
+/* PARTIE 7 */
+/* Mise en forme info jeu */
+.headerArticle{
+    width: 100%;
+}
+/* Gérer le flex sur l'article et la liste des autres articles */
+.monArticle{
+    width: 100%;
+}

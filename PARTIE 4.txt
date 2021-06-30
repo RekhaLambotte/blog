@@ -1,0 +1,23 @@
+/SRC/pages/admin
+ajouter bouton gérer les jeux
+
+/scr/pages/listeJeu/listeJeu.php à créer
+/src/fonctions/gameDBFonctions.php a créer
+/src/fonctions/catégorieDBFonctions.php a créer
+envoyer les fonctions gérant les catégories dans le dernier fichier créé.
+Rectifier les require
+
+ 
+/src/fonctions/gameDBFonctions.php 
+coder la fonction pour récupérer la liste des jeux +
+coder les fonctions pour récupèrer les genre et le hardware
+
+
+/scr/pages/listeJeu/listeJeu.php 
+coder le formulaire qui affichera les entrées sur la page
++
+coder le html dynamique pour créer formulaire ajout jeu
+
+/src/fonctions/gameDBFonctions.php 
+Créer add et delete game
+

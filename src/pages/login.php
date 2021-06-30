@@ -1,62 +1,55 @@
 <?php
-    $titre = "Connectez-vous";
+    $titre = "enregistrez-vous";
     require "../../src/common/template.php";
     $mdpNok = false;
     require "../../src/fonctions/dbAccess.php";
-    require "../../src/fonctions/mesFonctions.php";
     require "../../src/fonctions/dbFonction.php";
-    
-    // si mon user est connecté, je le renvoie sur l'accueil grâce à ma fonction:
-    estConnecte();
+    require '../../src/fonctions/mesFonctions.php';
+    $titre = "Connectez-vous";
 
-    // Traitement du formulaire
-    if(isset($_POST["login"]) && isset($_POST["mdp"])){
+    // Si mon user est connecté, je le renvoie sur la page d'acceuil
+    estConnecté();
+
+    // Si le formulaire est envoyé, je lance la fonction login pour connecter mon user
+    if(isset($_POST["login"]) && isset($_POST["password"])):
         $login = htmlspecialchars($_POST["login"]);
-        $mdp = htmlspecialchars($_POST["mdp"]);
+        $password = htmlspecialchars($_POST["password"]);
 
-        // Mes données sont sécurisée, je peux appeler ma fonction pour connecter mon user
-        login($login, $mdp);
-    } else {
+        login($login, $password);
+     
+    else:
 ?>
+
 <section class="register">
-    <form action="../../src/pages/login.php" method="post" class="login">
-    <?php
-        if(isset($_GET["erreur"])){
-            ?>
-                <h2><?=$_GET["erreur"]?></h2>
-            <?php
-        }
-    ?>
+    <form action="" method="post" class="login">
         <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Connectez-vous</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Login:</td>
-                    <td><input type="text" name="login" required placeholder="Entrez votre login"></td>
-                </tr>
-                <tr>
-                    <td>Mot de passe:</td>
-                    <td><input type="password" name="mdp" required placeholder="Entrez votre mot de passe"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Connectez-vous"></td>
-                </tr>
-            </tbody>
+            <?php
+            if(isset($_GET["erreur"])):
+            ?>
+            <h2><?= $_GET["erreur"] ?></h2>
+            <?php endif; ?>
+                <thead>
+                    <tr>
+                        <th colspan="2">Connectez-vous</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Login</td>
+                        <td><input type="text" name="login" required placeholder="Entrez votre login"></td>
+                    </tr>
+                    <tr>
+                        <td>Mot de passe:</td>
+                        <td><input type="password" name="password" required placeholder="Entrez votre mot de passe"></td>
+                    </tr>
+                    <tr>
+                       <td><input type="submit" value="Se connecter"></tr></td>
+                </tbody>
         </table>
     </form>
 </section>
 
-<?php
-    }
-
-?>
-
-
-
-<?php
+<?php 
+    endif; 
     require "../../src/common/footer.php";
 ?>

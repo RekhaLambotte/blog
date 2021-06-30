@@ -1,12 +1,9 @@
-<!-- Switch sur le $_GET que j'aurai reçu -->
-
+<!-- Je fais un switch sur le Get que j'aurai recu -->
 <?php
-    switch($_GET["code"]){
-        case '404' : 
-            header('location: ../../index.php');
-            exit();
-            break;
-        default: 
-            header('location: ../../index.php');
+switch($_GET['code'])
+{
+    case '404':header('Location: ../../index.php');
+    break;
+    default:header('Location: ../../index.php');
     }
 ?>

@@ -1,0 +1,146 @@
+/* PARTIE 7 */
+/* Mise en forme info jeu */
+.headerArticle{
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    padding: 1rem;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.headerArticle img{
+    width: 5rem;
+    height: auto;
+}
+.infoJeu{
+    padding: 2rem;
+}
+
+/* Gérer le flex sur l'article et la liste des autres articles */
+.monArticle{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.article{
+    flex: 5;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 27%);
+}
+
+.titreArticle{
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(0deg,
+    rgba(253,253,252,1) 0%,
+    rgba(253,253,252,0) 86%);
+    text-align: center;
+    display: grid;
+    align-content: end;
+}
+
+.contenuArticle{
+    background-color: white;
+    padding: 1.5rem;
+}
+
+/* La liste des articles disponibles */
+.listArticle{
+    width: 20%;
+    flex: 2;
+    background-color: #c8ff00;
+    max-height: 100vh;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 3px rgb(0 0 0 / 27%);
+    overflow: hid;
+}
+
+/* FORMULAIRE COMMENTAIRE */
+
+.commentaires{
+    width: 100%;
+    background-color: white;
+    padding: 2rem 2rem;
+    border-top: 1px solid black;
+}
+
+.commentaires form{
+    width: 80%;
+    margin: auto;
+}
+
+.commentaires table{
+    width: 100%;
+}
+
+.commentaires table tbody tr td{
+    width: 100%;
+}
+
+.commentaires table tbody tr td input,
+.commentaires table tbody tr td textarea
+{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type=submit]{
+    background: #FF0036;
+    box-shadow: 0px 10px 13px -7px #000000, 1px 2px 3px 3px rgba(0,0,0,0);
+    border: 1px solid yellow;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+input[type=submit]:hover{
+    animation: change 3s infinite;
+    color: white; 
+    -webkit-text-stroke: 1px black;
+}
+
+/* Liste des article */
+.listArticle div{
+    display: flex;
+    padding:  0.3rem;
+    margin: 0.5rem;
+    border: 1px solid yellow;
+    background-color: black;
+    color: yellow;
+    box-shadow: 0px 10px 13px -7px #000000, 1px 2px 3px 3px rgba(0,0,0,0);
+}
+
+.listArticle div img{
+    width: 5rem!important;
+}
+
+.listArticle div h2{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.listArticle div h2 a{
+    text-decoration: none;
+    color: yellow;
+
+}
+
+footer{
+    margin-top: 5rem;
+}
+
+p img{
+    width: 90%;
+    height: auto;
+}
+
+p iframe{
+    width: 68%;
+    display: block;
+    margin: 1.5rem auto;
+    box-shadow: 0px 10px 13px -7px #000000, 1px 2px 3px 3px rgba(0,0,0,0);
+
+}
